@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+html, body {
+    background: #74ebd5;
+    background: -webkit-linear-gradient(to bottom, #ACB6E5, #74ebd5);
+    background: linear-gradient(to bottom, #ACB6E5, #74ebd5); 
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1, .button-container {
+    text-align: center;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+#yes-button, #no-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 6px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 180px;
+}
+
+#yes-button {
+    background-color: #44c767;
+}
+
+#yes-button:hover {
+    background-color: #2e8540;
+}
+
+#no-button {
+    background-color: #ff5f5f;
+}
+
+#no-button:hover {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #c42f2f;
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    #yes-button, #no-button {
+        width: 140px;
+        font-size: 14px;
+    }
+}
